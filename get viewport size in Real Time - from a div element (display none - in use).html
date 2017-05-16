@@ -1,0 +1,46 @@
+
+
+<p id="ViewPortSize"> </p>
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- Load jQuery hosted by Google into your website -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+
+$( "body" ).append( '<div id="Div_Browser_ViewPort" style="width:100%; height:100%; display:none;"> </div>' );
+
+function GetViewPortSize() {
+$('#ViewPortSize').text("Width = " + $( "#Div_Browser_ViewPort" ).width() + " / Height = " + $( "#Div_Browser_ViewPort" ).height());
+}
+
+/* Execute "GetViewPortSize" function at page load */
+$(GetViewPortSize);
+
+/* Execute "GetViewPortSize" function everytime the browser viewport is resized */
+$( window ).resize(GetViewPortSize);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
