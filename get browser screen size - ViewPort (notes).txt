@@ -1,7 +1,39 @@
 
-   http://blog.jquery.com/2012/08/30/jquery-1-8-1-released/
-   
-Don’t use Quirks mode! jQuery has never supported Quirks mode and we do not perform any testing in Quirks.
+
+	https://forum.jquery.com/topic/how-to-get-browser-screen-width-height-size
+
+____________________________________________________________________
+
+	http://blog.jquery.com/2012/08/30/jquery-1-8-1-released/
+
+Don’t use Quirks mode! jQuery has never supported Quirks mode and we do not perform any testing in Quirks. 
 This can affect values like $("window").height(), and the jQuery 1.8 Quirks mode results did change in order to support some modern browser features.
-The majority of problem cases we’ve seen are from developers that wanted to be in Standards mode but had an invalid doctype or extraneous markup before their <html> tag.
-When in doubt, use the simple and short <!doctype html>.
+The majority of problem cases we’ve seen are from developers that wanted to be in Standards mode but had an invalid doctype or extraneous markup
+before their <html> tag. When in doubt, use the simple and short <!doctype html>.
+_____________________________________________________________________
+
+Tested all the doctypes declarations below and through all of them it's possible to get the correct browser viewport size:
+
+Common DOCTYPE Declarations (html 5 "<!DOCTYPE html>" seems to be the recommended one):
+
+<!DOCTYPE html>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+
+
+
