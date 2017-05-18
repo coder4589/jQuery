@@ -12,6 +12,13 @@ The majority of problem cases we’ve seen are from developers that wanted to be
 before their <html> tag. When in doubt, use the simple and short <!doctype html>.
 _____________________________________________________________________
 
+It seems that there is no way to get browser viewport size in "quirks mode"!
+
+so, the best way to go seems to be by using <!doctype html> declaration and use
+jquery $(window).width()/$(window).height() or javascript document.documentElement.clientWidth/document.documentElement.clientHeight
+
+_____________________________________________________________________
+
 Tested all the doctypes declarations below and through all of them it's possible to get the correct browser viewport size:
 
 Common DOCTYPE Declarations (html 5 "<!DOCTYPE html>" seems to be the recommended one):
