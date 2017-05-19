@@ -1,0 +1,49 @@
+
+
+<!doctype html>
+<!-- "doctype html" seems to be necessary in order to allow jQuery to get the correct Browser ViewPort width\height size -->
+<!-- "doctype html" declaration must be the very first thing in your HTML document, before the "html" tag -->
+
+
+<p id="ViewPortSize"> </p>
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- Load jQuery hosted by Google into your website -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+
+function GetViewPortSize() {
+$('#ViewPortSize').text("Width = " + $( window ).width() + " / Height = " + $( window ).height());   /* <!doctype html> may be necessary */
+}
+
+/* Execute "GetViewPortSize" function at page load */
+$(GetViewPortSize);
+
+/* Execute "GetViewPortSize" function everytime the browser viewport is resized */
+$( window ).resize(GetViewPortSize);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
