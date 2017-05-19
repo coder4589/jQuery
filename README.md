@@ -6,7 +6,7 @@ get browser screen size - ViewPort (Wrong): https://coder4589.github.io/jQuery/g
 
 ________
 
-get viewport size in Real Time - from a div element (youtube video): https://www.youtube.com/watch?v=MXQ-NOUVwjA
+get viewport size in Real Time (youtube video): https://www.youtube.com/watch?v=MXQ-NOUVwjA
 
 get viewport size in Real Time - from ViewPort (jQuery): https://coder4589.github.io/jQuery/get%20viewport%20size%20in%20Real%20Time%20-%201_%20from%20ViewPort%20(jQuery).html
 
