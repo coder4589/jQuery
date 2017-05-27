@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Almost all websites nowadays use "html 5" doctype declaration, which is, "doctype html" -->
+<!-- Doctype declaration is important, for example, jQuery requires it in order to work properly -->
+<!-- Doctype declaration must be the very first thing in your HTML document, before the "html" tag -->
+
+<object data="http://www.pcre.org/pcre.txt" style="color:red; background-color:grey;width:425px; height:150px;"></object>
+<object data="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" style="color:red; background-color:grey;width:425px; height:150px;"></object>
+<br>
+<textarea id="TextArea_1" readonly cols="50" rows="10" wrap="off"> </textarea>
+<textarea id="TextArea_2" readonly cols="50" rows="10" wrap="off"> </textarea>
+<br>
+<textarea id="TextArea_3" readonly cols="50" rows="10" wrap="off"> </textarea>
+<textarea id="TextArea_4" readonly cols="50" rows="10" wrap="off"> </textarea>
+
+<!-- __________________________________________________________________________________________ -->
+
+
+<!-- Load jQuery hosted by Google into your website -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script> 
+
+/*** ______ Using jQuery .get() - Easier to use ______ ***/
+
+$.get('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', function(data) {
+$('#TextArea_1').val(data);
+});
+
+$.get('https://raw.githubusercontent.com/coder4589/elevatezoom-plus-coder4589/master/Blogger%20-%20elevateZoom.txt', function(data) {
+$('#TextArea_2').val(data);
+});
+
+/*** ______ Using jQuery .ajax() ______ ***/
+
+$.ajax({url: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", success: function(result){
+$("#TextArea_3").val(result);
+}});
+
+$.ajax({url: "https://raw.githubusercontent.com/coder4589/elevatezoom-plus-coder4589/master/Blogger%20-%20elevateZoom.txt", success: function(result){
+$("#TextArea_4").val(result);
+}});
+
+</script>
